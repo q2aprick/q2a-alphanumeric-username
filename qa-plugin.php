@@ -21,6 +21,7 @@
 	}
 
 	qa_register_plugin_module('filter', 'alpha.php', 'alpha_filter', 'Alphanumeric Handle Filter');
+	qa_register_plugin_layer('mention.php', 'Mention Layer');
 
 /*
 	Omit PHP closing tag to help avoid accidental output
