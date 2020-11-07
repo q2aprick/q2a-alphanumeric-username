@@ -8,7 +8,7 @@
   {Beta! 
   
   Drawbacks: 
-          1) If users type emails in the content, it will not be displayed properly (can be improve if I have more time, but I don't think people will type emails in here) 
+          1) If users type emails in the content, it will not be displayed properly (can be improved if I have more time, but I don't think people will type emails these days) 
           2) No autocomplete when you type the usernames (if you want this, you have to sacrifice perfermoance because you need to load ajax, as well as some MySQL queries
 
 }
