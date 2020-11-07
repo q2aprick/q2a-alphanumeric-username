@@ -22,23 +22,15 @@
 		}
 		$subhandle = str_replace(' ', '', $handle);
 		if (strlen($subhandle) !== strlen($handle)) {
-return 'Spaces are not allowed.' ;
-}
+                        return 'Spaces are not allowed.' ;
+                }
 		
 
-if(!preg_match('/^[a-zA-Z0-9]+$/', $handle)) {
-    return 'Your username is not properly formatted.';
-} 
+                if(!preg_match('/^[a-zA-Z0-9_]+$/', $handle)) {
+                        return 'Your username is not properly formatted.';
+                } 
 		
-		
-		
-		
-//		if (strlen(trim($handle)) == strlen($handle)) {
-//return 'No space, boy';
-//}
 
-	
-	//	}
 		if (qa_strlen($handle) > QA_DB_MAX_HANDLE_LENGTH) {
 			return qa_lang_sub('main/max_length_x', QA_DB_MAX_HANDLE_LENGTH);
 		}
