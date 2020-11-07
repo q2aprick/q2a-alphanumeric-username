@@ -1,0 +1,11 @@
+{
+	"name": "Q2A Alphanumeric Username",
+	"description": "Restricts the chracters in username to A-Z, a-z, numbers and underscore sign.",
+	"version": "1.4.0",
+	"date": "2020-11-01",
+	"author": "Q2A Prick",
+	"author_uri": "github.com/q2aprick",
+	"license": "GPLv3",
+	"min_q2a": "1.5",
+	"load_order": "after_db_init"
+}
