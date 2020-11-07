@@ -22,3 +22,13 @@
 <a class="mention" href=......>.
 
 ```
+
+a.mention {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.93em;
+    color: red;
+    padding: 0 4px 1px;
+    background: silver;
+    border-radius: 8px;
+    }
