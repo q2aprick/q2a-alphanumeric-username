@@ -17,5 +17,8 @@
 
 2. No autocomplete when you type the usernames (if you want this, you have to sacrifice performance because you need to load ajax, as well as some MySQL queries. There is a paid plugin by pupi1985)
 
-#3: If you want to apply specific CSS effects to the mention links, modify the code with <a class="mention" href=......>.
+#3: If you want to apply specific CSS effects to the mention links, modify the code with
+```
+<a class="mention" href=......>.
 
+```
