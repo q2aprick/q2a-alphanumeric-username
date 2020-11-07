@@ -9,7 +9,7 @@
   
   Note:
   
-  #1: Caps Lock still works, just like in Twitter and Reddit. If you want usernames to be in nomarl case like Instagram, you have to add more codes by yourself. Hint: the simplest way is to convert captialized letters into normal case.
+  #1: Caps Lock still works, just like in Twitter and Reddit. If you want usernames to be in nomarl case like in Instagram, you have to add more codes by yourself. Hint: the simplest way is to convert captialized letters into normal case.
   
   #2: The mention feature has some drawbacks:
   
