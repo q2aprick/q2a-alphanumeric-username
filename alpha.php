@@ -27,7 +27,7 @@
 		
 
                 if(!preg_match('/^[a-zA-Z0-9_]+$/', $handle)) {
-                        return 'Your username is not properly formatted.';
+                        return 'Please use characters from A-Z, numbers from 0-9 and underscore sign only.';
                 } 
 		
 
