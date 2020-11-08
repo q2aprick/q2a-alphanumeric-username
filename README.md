@@ -33,7 +33,7 @@ a.mention {
     border-radius: 8px;
     }
 
-#4: To autostart a comment with @nickname, please understand that an aswer or a question is the parent post of all comments in a group. So, all "comment" buttons return the same textarea. We can only austart with the @nickname of the post author, not individual commentators.
+#4: To autostart a comment with @nickname, please understand that an aswer or a question is the parent post of all comments in a group. So, all "comment" buttons return the same textarea. We can only autostart with the @nickname of the post author, not individual commentators.
 
 Modify qa_page_q_add_a_form function in /qa-include/pages/question-view.php with these code:
 ```
