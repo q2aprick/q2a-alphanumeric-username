@@ -9,7 +9,7 @@
   
   Note:
   
-  #1: Caps Lock still works, just like in Twitter and Reddit. If you want usernames to be in nomarl case like in Instagram, you have to add more codes by yourself. Hint: the simplest way is to convert captialized letters into normal case.
+  #1: Caps Lock still works, just like in Twitter and Reddit. If you want usernames to be in normal case like in Instagram, you have to add more codes by yourself. Hint: the simplest way is to convert capitalized letters into normal case.
   
   #2: The mention feature has some drawbacks:
   
@@ -32,3 +32,12 @@ a.mention {
     background: silver;
     border-radius: 8px;
     }
+#4: To autostart a comment with @nickname, please understand that an aswer or a question is the parent post of all comments in a group. So, all "comment" buttons return the same textarea. We can only austart with the @nickname of the post author, not individual commentators.
+
+Modify qa_page_q_add_a_form function in /qa-include/pages/question-view.php with these code:
+```
+	if (qa_get_logged_in_userid() != $parent['userid'])
+	{$form['fields']['content']['value'] = '@'.$parent['handle'];}
+```
+  
+ You can only override this function indirectly by overriding qa_routing function, so if you are lazy, just hack Q2A core.
