@@ -5,7 +5,7 @@
 > Disallow spaces among username characters.
 
 > Mention other users if you type @Nickname in the question, answer or comment contents. 
-  {Beta! 
+  {Beta}
   
   Note:
   
@@ -35,7 +35,7 @@ a.mention {
 
 #4: To autostart a comment with @nickname, please understand that an aswer or a question is the parent post of all comments in a group. So, all "comment" buttons return the same textarea. We can only autostart with the @nickname of the post author, not individual commentators.
 
-Modify qa_page_q_add_a_form function in /qa-include/pages/question-view.php with these code:
+Modify qa_page_q_add_a_form function in /qa-include/pages/question-view.php with these codes:
 ```
 	if (qa_get_logged_in_userid() != $parent['userid'])
 	{$form['fields']['content']['value'] = '@'.$parent['handle'];}
